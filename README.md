@@ -152,5 +152,120 @@ Gain insights into setting up automated development pipelines, boosting efficien
 
 This structured approach ensures learners not only build technical skills but also adopt a mindset geared toward problem-solving, scalability, and industry-grade project execution.
 
+## Database Design
+
+The database schema is designed to support a property rental platform. Below are the core entities, their key fields, and the relationships between them:
+
+1. **Users**
+Represents individuals using the platform, including hosts and guests.
+
+### Key Fields:
+
+- id: Unique identifier for each user
+
+- name: Full name of the user
+
+- email: Unique email address used for login
+
+- password_hash: Encrypted password
+
+- role: Defines if the user is a host, guest, or admin
+
+### Relationships:
+
+- A user can **own multiple** properties
+
+- A user can **make multiple** bookings
+
+- A user can **write multiple** reviews
+
+- A user can **make multiple** payments
+
+2. **Properties**
+Represents listings created by hosts for rental.
+
+### Key Fields:
+
+- id: Unique identifier for each property
+
+- owner_id: Foreign key to the Users table
+
+- title: Name or short description of the property
+
+- location: Address or city of the property
+
+- price_per_night: Cost per night
+
+### Relationships:
+
+- A property belongs to a user (host)
+
+- A property can have many bookings
+
+- A property can have many reviews
+
+3. **Bookings**
+Represents reservations made by guests for specific properties.
+
+### Key Fields:
+
+ - id: Unique identifier for each booking
+
+- user_id: Foreign key to the Users table (guest)
+
+- property_id: Foreign key to the Properties table
+
+- start_date: Booking start date
+
+- end_date: Booking end date
+
+### Relationships:
+
+- A booking belongs to a user (guest)
+
+- A booking belongs to a property
+
+- A booking has one payment
+
+4. **Reviews**
+Captures feedback from guests after a stay.
+
+### Key Fields:
+
+- id: Unique identifier for each review
+
+- user_id: Foreign key to the Users table (guest)
+
+- property_id: Foreign key to the Properties table
+
+- rating: Numerical score (e.g., 1–5)
+
+- comment: Text feedback
+
+### Relationships:
+
+- A review belongs to a user (guest)
+
+- A review belongs to a property
+
+5. **Payments**
+Tracks transactions related to bookings.
+
+### Key Fields:
+
+- id: Unique identifier for each payment
+
+- booking_id: Foreign key to the Bookings table
+
+- amount: Total amount paid
+
+- payment_method: e.g., credit card, PayPal
+
+- status: Payment status (e.g., completed, pending, failed)
+
+### Relationships:
+
+- A payment belongs to a booking
+
 # AUTHOR
 - Simanga Mchunu
