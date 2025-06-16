@@ -152,6 +152,9 @@ Gain insights into setting up automated development pipelines, boosting efficien
 
 This structured approach ensures learners not only build technical skills but also adopt a mindset geared toward problem-solving, scalability, and industry-grade project execution.
 
+> [!IMPORTANT]
+> Design your database relationships carefully to maintain data integrity and avoid redundancy. Use foreign keys, constraints, and indexes where appropriate, and always consider how changes in one entity (e.g., deleting a user) may affect related data (e.g., bookings, reviews).
+
 ## Database Design
 
 The database schema is designed to support a property rental platform. Below are the core entities, their key fields, and the relationships between them:
@@ -267,6 +270,9 @@ Tracks transactions related to bookings.
 
 - A payment belongs to a booking
 
+> [!NOTE]
+> Features can be developed incrementally. Start by building and testing core functionality (e.g., user authentication and property listings), then gradually add more advanced modules like payments, reviews, and admin dashboards as the project evolves.
+
 ## Feature Breakdown
 This project is built to support a full-featured property rental platform. Below are the core features that enable seamless interaction between users, hosts, and the system:
 
@@ -298,6 +304,9 @@ Allows users to browse listings using filters like location, price range, and av
 
 Provides administrators with oversight capabilities including user management, content moderation, and system analytics. This ensures the platform remains healthy, secure, and scalable.
 
+
+> [!WARNING]
+> Never expose sensitive information such as API keys, database credentials, or JWT secrets in your source code or public repositories. Use environment variables and secure secret management tools to keep your credentials safe—especially in CI/CD environments.
 
 ## API Security
 Security is a critical part of this project to protect sensitive user data, maintain platform integrity, and ensure safe financial transactions. The following security measures are implemented to safeguard the system:
@@ -337,6 +346,8 @@ Why it matters: Ensures compliance with industry standards (e.g., PCI-DSS) and p
 What it does: Access tokens have a limited lifespan and can be revoked when compromised.
 Why it matters: Limits exposure in case of a token leak and ensures sessions can be managed securely.
 
+> [!TIP]
+> Keep your CI/CD workflows fast and focused. Run unit tests, linting, and security checks on every push, but reserve heavy integration or deployment steps for changes to main branches (like main or production). This reduces wait times during development and avoids unnecessary deployments from feature branches.
 
 ## CI/CD Pipeline
 Continuous Integration (CI) and Continuous Deployment (CD) pipelines are essential for automating the build, test, and deployment processes of this project. They help ensure code quality, reduce human error, and enable faster and more reliable releases.
@@ -371,6 +382,7 @@ Docker Hub or GitHub Container Registry: Stores and distributes Docker images us
 4. The image is pushed to a container registry.
 
 5. The updated app is automatically deployed to a staging or production environment.
+
 
 
 # AUTHOR
