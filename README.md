@@ -28,6 +28,59 @@ To successfully complete the project tasks, learners must:
 - Docker 
 - MySQL 
 - Github Action
+
+## Team Roles
+
+**Backend Engineer**
+
+### Responsibility
+- Engineers and stabilizes the product
+
+- Solves any technical problems emerging during the development lifecycle
+
+Back-end developers, in turn, implement the core of an app—its algorithms and business logic. Experienced back-end developers not only write code but also do the tasks of an architect—for example, devise an app architecture or design and implement the necessary integrations.
+
+**Devops Engineer**
+
+### Responsibility
+- Facilitates cooperation between development and operations teams
+
+- Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery
+
+Even in Agile environments, development and operations teams can be siloed. DevOps engineers serve as a link between the two teams, unifying and automating the software delivery process and helping strike a balance between introducing changes quickly and keeping an application stable. Working together with software developers, system administrators, and operational staff, DevOps engineers oversee and facilitate code releases on a CI/CD basis.
+
+**Quality Assurance Engineer**
+
+### Responsibility
+- Makes sure an application performs according to requirements
+
+- Spots functional and non-functional defects
+
+The job of a quality assurance engineer is to verify whether an application meets the requirements—both functional and non-functional. Functional requirements define what an application should do, while non-functional requirements specify how it should do that. To verify both, QA specialists run various checks, followed by analyzing the test results and reporting on the application quality.
+
+They evaluate an application from different angles—be it functionality, usability, security, or performance (hence, many types of testing). To keep track of the executed checks and ensure that all the requirements are covered with tests, QA specialists may create different kinds of testing documentation—from test scenarios to test protocols to test results reports. And experienced QA engineers design and implement quality assurance processes and procedures that help prevent defects at later stages of development.
+
+**Business Analyst**
+
+### Responsibility
+- Understands customer’s business processes
+
+- Translates customer business needs into requirements
+
+A business analyst dives deep into a customer’s workflows and analyzes stakeholder feedback to help a client formulate what their wants look like and align a customer’s vision with what a development team is producing. They translate an abstract product idea into a set of tangible requirements.
+
+A BA enriches a product development team with a profound understanding of business processes from various perspectives and the ability to shape up a software product that creates maximum business value. A business analyst may step in even before a software development team structure is defined and continue to bridge the gap between the customer and the team during later stages of development.
+
+**Software architect**
+
+### Responsibility
+- Designs a high-level software architecture
+
+- Selects appropriate tools and platforms to implement the product vision
+
+- Sets up code quality standards and performs code reviews
+
+An architect is an expert-level software engineer who makes executive software design decisions on behalf of an app development team. You will need one if you deal with a software product with complex requirements or legacy software that calls for profound changes. A software architect decides which services and databases should communicate together, how integrations should work, and how to ensure that the product is secure and stable.
  
 
 
