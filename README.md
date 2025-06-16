@@ -27,33 +27,43 @@ To successfully complete the project tasks, learners must:
 This project leverages a robust set of technologies to build scalable, maintainable, and high-performance backend systems:
 
 **Django**
+
 A high-level Python web framework used to build secure and maintainable web applications quickly. In this project, Django is used to create RESTful APIs and manage the backend logic efficiently.
 
 **PostgreSQL**
+
 A powerful, open-source object-relational database system. PostgreSQL serves as the primary data store for the application, ensuring data integrity, reliability, and advanced querying capabilities.
 
 **MySQL**
+
 A widely-used open-source relational database. MySQL may be used as an alternative to PostgreSQL in environments where compatibility or specific features are required.
 
 **GraphQL**
+
 A query language for APIs that enables clients to request only the data they need. GraphQL is used to optimize communication between the frontend and backend by providing flexible and efficient data fetching.
 
 **Docker**
+
 A platform for developing, shipping, and running applications in isolated containers. Docker is used to containerize the application, ensuring consistent environments across development, testing, and production.
 
 **Gunicorn**
+
 A Python WSGI HTTP server for UNIX. It is used in this project as the production server to run the Django application, offering better performance and scalability.
 
 **Nginx**
+
 A high-performance web server and reverse proxy. Nginx is configured to serve static files and act as a reverse proxy to forward requests to the Gunicorn server securely and efficiently.
 
 **Redis**
+
 An in-memory data store used as a caching layer and message broker. Redis helps improve application performance and is often used for background task queues.
 
 **Celery**
+
 A distributed task queue that enables asynchronous task processing. In this project, Celery works with Redis to handle background jobs such as sending emails or processing long-running tasks.
 
 **GitHub Actions**
+
 A CI/CD tool integrated into GitHub that automates workflows such as testing, linting, and deployment. GitHub Actions is used to ensure code quality and streamline the development lifecycle through automated pipelines.
 
 ## Team Roles
