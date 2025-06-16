@@ -299,6 +299,45 @@ Allows users to browse listings using filters like location, price range, and av
 Provides administrators with oversight capabilities including user management, content moderation, and system analytics. This ensures the platform remains healthy, secure, and scalable.
 
 
+## API Security
+Security is a critical part of this project to protect sensitive user data, maintain platform integrity, and ensure safe financial transactions. The following security measures are implemented to safeguard the system:
+
+1. **Authentication**
+
+What it does: Verifies the identity of users using methods such as token-based authentication (e.g., JWT or OAuth).
+Why it matters: Prevents unauthorized access and ensures that only legitimate users can interact with protected endpoints like bookings and payments.
+
+2. **Authorization**
+
+What it does: Controls what authenticated users are allowed to do based on their roles (e.g., guest, host, admin).
+Why it matters: Ensures users can only access resources they own or are permitted to view/edit, protecting property listings, user data, and administrative functions.
+
+3. **Rate Limiting**
+
+What it does: Restricts the number of API requests a client can make in a given time period.
+Why it matters: Protects the system from abuse, brute-force attacks, and denial-of-service (DoS) threats by preventing excessive or malicious traffic.
+
+4. **Data Validation and Sanitization**
+
+What it does: Ensures all input data is correctly formatted and free from malicious content (e.g., SQL injection, XSS).
+Why it matters: Prevents common attack vectors that could compromise the integrity of the application or expose vulnerabilities.
+
+5. **HTTPS Enforcement**
+
+What it does: Ensures all communication between clients and the server is encrypted using HTTPS.
+Why it matters: Protects sensitive data such as login credentials and payment information from being intercepted during transmission.
+
+6. **Secure Payment Handling**
+
+What it does: Uses third-party payment gateways to handle financial transactions securely.
+Why it matters: Ensures compliance with industry standards (e.g., PCI-DSS) and protects users from payment fraud and data breaches.
+
+7. **Token Expiry and Revocation**
+
+What it does: Access tokens have a limited lifespan and can be revoked when compromised.
+Why it matters: Limits exposure in case of a token leak and ensures sessions can be managed securely.
+
+
 
 # AUTHOR
 - Simanga Mchunu
