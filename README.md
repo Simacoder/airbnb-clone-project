@@ -267,5 +267,31 @@ Tracks transactions related to bookings.
 
 - A payment belongs to a booking
 
+## Feature Breakdown
+This project is built to support a full-featured property rental platform. Below are the core features that enable seamless interaction between users, hosts, and the system:
+
+1. **User Management**
+Handles user registration, authentication, and role assignment (guest or host). This feature ensures secure access and personalized experiences across the platform.
+
+2. **Property Management**
+Allows hosts to create, update, and manage property listings, including details like pricing, location, and availability. This is the backbone for building a rich and searchable catalog of properties.
+
+3. **Booking System**
+Enables guests to search for available properties, select dates, and place bookings. It manages date conflicts and ensures accurate scheduling between guests and hosts.
+
+4. **Review and Rating System**
+Lets guests leave feedback and rate properties after their stay. This builds trust within the platform and helps future users make informed decisions.
+
+5. **Payment Integration**
+Processes and records payments for bookings using secure methods. It supports transaction tracking and ensures a seamless financial flow between guests and hosts.
+
+6. **Search and Filter Functionality**
+Allows users to browse listings using filters like location, price range, and availability. This improves user experience by helping them find suitable properties quickly.
+
+7. **Admin Dashboard** 
+Provides administrators with oversight capabilities including user management, content moderation, and system analytics. This ensures the platform remains healthy, secure, and scalable.
+
+
+
 # AUTHOR
 - Simanga Mchunu
