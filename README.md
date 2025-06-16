@@ -338,6 +338,40 @@ What it does: Access tokens have a limited lifespan and can be revoked when comp
 Why it matters: Limits exposure in case of a token leak and ensures sessions can be managed securely.
 
 
+## CI/CD Pipeline
+Continuous Integration (CI) and Continuous Deployment (CD) pipelines are essential for automating the build, test, and deployment processes of this project. They help ensure code quality, reduce human error, and enable faster and more reliable releases.
+
+**Why CI/CD is Important**
+
+- **Automated Testing**: Every code change is automatically tested to catch bugs early.
+
+- **Consistent Builds**: Ensures the application builds the same way across all environments.
+
+- **Faster Deployment**: Speeds up the release cycle by automating deployment steps.
+
+- **Developer Productivity**: Frees up time for engineers to focus on building features rather than manual tasks.
+
+**Tools Used**
+- **GitHub Actions**: Automates workflows for testing, linting, and deploying code every time changes are pushed to the repository.
+
+- **Docker**: Creates consistent environments for testing and deployment by containerizing the application.
+
+Docker Hub or GitHub Container Registry: Stores and distributes Docker images used in deployment.
+
+(Optional) Heroku, AWS, or DigitalOcean: Cloud platforms where the application can be deployed automatically via the CI/CD pipeline.
+
+**Typical Workflow**
+
+1. Developer pushes code to GitHub.
+
+2. GitHub Actions runs tests and lints code.
+
+3. If successful, the code is built into a Docker image.
+
+4. The image is pushed to a container registry.
+
+5. The updated app is automatically deployed to a staging or production environment.
+
 
 # AUTHOR
 - Simanga Mchunu
